@@ -1,4 +1,5 @@
-import 'package:finwise_ai_app/Home_Screen.dart';
+import 'package:finwise_ai_app/Screens/Home_Screen.dart';
+import 'package:finwise_ai_app/Screens/Profile_Screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,6 +18,8 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white,
       ),
       home: const HomeScreen(),
+      initialRoute: '/',
+      routes: {'/ProfileScreen': (context) => ProfileScreen()},
     );
   }
 }
